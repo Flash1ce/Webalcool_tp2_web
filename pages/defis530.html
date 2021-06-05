@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/defis530.js" defer="defer"></script>
+
+  <title>Défi 5/30.</title>
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1>Défi 5/30</h1>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+          <div>
+            <p class="inline">nombre de jours : </p>
+            <p class="inline" id="nbJours"></p>
+          </div>
+
+          <p>
+            <a class="btn btn-primary topSpace" data-toggle="collapse" href="#collapseFruitsLegumes" role="button"
+              aria-expanded="false" aria-controls="collapseFruitsLegumes">Fruits et Légumes</a>
+          </p>
+          <div class="collapse" id="collapseFruitsLegumes">
+            <div class="card card-body">
+              <h2>Fruits et Légumes</h2>
+              <div>
+                <p class="inline">Moyenne de fruits et légumes par jour : </p>
+                <p class="inline" id="moyenneFruitJours"></p>
+              </div>
+              <div>
+                <p class="inline">Minimum de fruits et légumes par jour : </p>
+                <p class="inline" id="minimumLegum"></p>
+                <p class="inline">Recommandation : </p>
+                <p class="inline">5</p>
+              </div>
+
+              <div>
+                <p class="inline">Ratio des journées respectant le défi : </p>
+                <p class="inline" id="ratioLegumeDefisRespect">0</p>
+              </div>
+
+              <div>
+                <p id="joursLegumes">jours 1 ect...</p>
+              </div>
+
+            </div>
+          </div>
+          <p>
+            <a class="btn btn-primary topSpace" data-toggle="collapse" href="#collapseExercices" role="button"
+              aria-expanded="false" aria-controls="collapseExercices">
+              Exercices
+            </a>
+          </p>
+          <div class="collapse" id="collapseExercices">
+            <div class="card card-body">
+              <h2>Exercices</h2>
+
+              <div>
+                <p class="inline">Moyenne de minutes d’exercice par jour : </p>
+                <p class="inline" id="moyenneExercice"></p>
+              </div>
+
+              <div>
+                <p class="inline">Minimum par jour : </p>
+                <p class="inline" id="minimumTempExercice"></p>
+                <p class="inline">Recommandation : </p>
+                <p class="inline">30</p>
+              </div>
+
+              <div>
+                <p class="inline">Ratio des journées respectant le défi : </p>
+                <p class="inline" id="ratioExerciceDefisRespect">0</p>
+              </div>
+
+              <div>
+                <p id="joursExercice">jours 1 ect...</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div id="alertdiv" class="alert alert-danger textCentre topSpace" role="alert">
+            <p id="messageAlert">Le défis n'est pas relever</p>
+          </div>
+          <p id="Information"><B>Information :</B> Vous devriez avoir consommer X fruits et légumes à cette heure de la
+            journée.</p>
+        </div>
+        <div class="col-2"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8"><a class="btn btn-primary" href="../index.html" role="button">retour</a></div>
+      <div class="col-2"></div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

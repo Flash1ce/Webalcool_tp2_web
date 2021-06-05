@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+  <script type="text/javascript" src="../js/alcool.js" defer="defer"></script>
+
+  <title>Recommandations</title>
+</head>
+
+<body>
+
+  <header class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h1>Alcool</h1>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2"></div>
+
+        <div class="col-3">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-homme">Homme</a>
+            <a class="list-group-item list-group-item-action" href="#list-femme">Femme</a>
+            <a class="list-group-item list-group-item-action" href="#list-situationsparticulieres">Situations
+              particulières</a>
+          </div>
+        </div>
+
+        <div class="col-5">
+          <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+            <h4 id="list-homme">Homme</h4>
+            <p>0 à 3 verres standard par jour Au plus 15 verres standard par semaine.</p>
+            <h4 id="list-femme">Femme</h4>
+            <p>0 à 2 verres par jour Au plus 10 verres standard par semaine.</p>
+            <h4 id="list-situationsparticulieres">Situations particulières</h4>
+            <p> Pour les moins de 18 ans 0 verres.<br /> Pour les femmes enceintes 0 verres.</p>
+          </div>
+        </div>
+        <div class="col-3"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h2 class="topSpace">Caractéristiques de la personne</h2>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+
+        <form>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nom">Nom</label>
+              <input id="nom" class="form-control" type="text">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="prenom">Prenom</label>
+              <input id="prenom" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="datenaissance">date de naissance</label>
+            <input type="text" class="form-control" id="datenaissance" placeholder="2020-03-09">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="nbJoursAnalyser">nombre de jours à analyser</label>
+              <input type="text" class="form-control" id="nbJoursAnalyser">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="sexe">Sexe</label>
+              <select id="sexe" class="form-control">
+                <option>Homme</option>
+                <option selected>Femme</option>
+                <option>Autre</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="situationparticuliere">
+              <label class="form-check-label" for="situationparticuliere">situation particulière</label>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary" id="soumettre">Soumettre</button>
+        </form>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <h2 class="topSpace">Résultats</h2>
+      </div>
+      <div class="col-2"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-2"></div>
+
+      <div class="col-8">
+        <div>
+          <p class="inline" id="genereNom">nom</p>
+          <p class="inline">, </p>
+          <p class="inline" id="generePrenom">Prénom</p>
+        </div>
+        <div>
+          <p class="inline">Âge : </p>
+          <p class="inline" id="genereAge">0</p>
+        </div>
+        <div>
+          <p class="inline">Période : </p>
+          <p class="inline" id="genereJours">0</p>
+          <p class="inline">jour(s) Semaines complètes : </p>
+          <p class="inline" id="genereSemaine">0</p>
+        </div>
+        <div>
+          <p class="inline">Moyenne par jour : </p>
+          <p class="inline" id="genereMoyenne">0</p>
+        </div>
+        <div>
+          <p class="inline">Consommation sur une semaine : </p>
+          <p class="inline" id="nbConsomSemain">0</p>
+          <p class="inline">Recommandation : </p>
+          <p class="inline" id="genereRecommandation1">0</p>
+        </div>
+        <div>
+          <p class="inline">Maximum en une journée : </p>
+          <p class="inline" id="genereMax">0</p>
+          <p class="inline">Recommandation : </p>
+          <p class="inline" id="genereRecommandation2">0</p>
+        </div>
+        <div>
+          <p class="inline">Ratio de journées excédants : </p>
+          <p class="inline" id="genereRatioExcedent">0</p>
+          <p class="inline">%</p>
+        </div>
+        <div>
+          <p class="inline">Ratio de journées sans alcool :</p>
+          <p class="inline" id="genereRatioSansAlcool">0</p>
+          <p class="inline">%</p>
+        </div>
+        <div>
+          <p class="inline" id="genereMessage">Vous ne respectez pas les recommandations</p>
+        </div>
+      </div>
+
+      <div class="col-2"></div>
+    </div>
+    </div>
+  </main>
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8 topSpace"><a class="btn btn-primary" href="../index.html" role="button">retour</a></div>
+      <div class="col-2"></div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

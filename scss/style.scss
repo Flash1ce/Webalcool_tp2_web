@@ -1,0 +1,46 @@
+/*Général */
+.w100{
+    width: 100%;
+}
+.maxWidth{
+    max-width: 600px;
+    max-height: 100px;
+}
+.textCentre{
+    text-align: center;
+}
+.justifyCont{
+    display: flex;
+}
+.inline{
+    display: inline;
+}
+.centrer{
+    justify-content: center;
+}
+.topSpace{
+    margin-top: 20px;
+}
+/*index*/
+@media only screen and (max-width: 576px) {
+    .hidePUB{
+        display: none;
+    }
+}
+
+/*Page Défis*/
+
+
+/*Page Alcool*/
+.scrollspy-example{
+    position: relative;
+    height: 148px;
+    overflow: auto;
+}
+
+
+/*BootSrap*/
+$primary: red;
+$secondary: Black;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
